@@ -1,0 +1,19 @@
+'''
+https://www.acmicpc.net/problem/1436
+'''
+
+import sys
+
+n = int(sys.stdin.readline().rstrip())
+i = 0
+cnt = 0
+ans=0
+while True:
+    if '666' in str(i):
+        cnt+=1
+    if cnt == n:
+        ans = i
+        break
+    i+=1
+
+print(ans)
