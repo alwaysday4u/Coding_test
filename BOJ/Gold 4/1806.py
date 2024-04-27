@@ -2,11 +2,11 @@
 https://www.acmicpc.net/problem/1806
 '''
 
-_, n = map(int, input().split())
+l, n = map(int, input().split())
 arr = list(map(int, input().split()))
 start = 0
 end = 0
-ans = len(arr) + 1
+ans = l + 1
 s = 0
 
 while end < len(arr):
@@ -17,7 +17,7 @@ while end < len(arr):
         start += 1
     end += 1
 
-if ans == len(arr) + 1:
+if ans == l + 1:
     print(0)
 else:
     print(ans)
